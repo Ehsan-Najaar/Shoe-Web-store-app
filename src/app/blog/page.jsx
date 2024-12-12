@@ -65,13 +65,6 @@ export default function Blog() {
       date: '2024-03-10',
     },
     {
-      id: 3,
-      image: '/images/jpg(9).jpg',
-      title: 'چگونه کفش مناسب برای کار انتخاب کنیم',
-      comments: 6,
-      date: '2024-01-30',
-    },
-    {
       id: 4,
       image: '/images/jpg(10).jpg',
       title: 'مقایسه انواع کفش‌های پیاده‌روی',
