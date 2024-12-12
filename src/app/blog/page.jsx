@@ -158,7 +158,7 @@ export default function Blog() {
           </ul>
         </div>
 
-        {/* دسته‌بندی‌ها */}
+        {/*   دسته‌بندی‌ها */}
         <div className="bg-neutral border rounded-xl p-4 my-12">
           <h2 className="text-2xl font-bold pb-4 border-b border-gray-300">
             دسته‌بندی‌ها
