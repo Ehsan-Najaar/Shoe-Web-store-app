@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../public/fonts/IRANSans.css';
+
+:root {
+  --primary: #2d3436;
+  --secondary: #dfe6e9;
+  --accent: #e17055;
+  --neutral: #f8f9fa;
+  --dark: #636e72;
+  --background: #e5e5e5; /* Soft Light Gray */
+}
+
+/* Theme 1 */
+[data-theme='theme1'] {
+  --primary: #2d3436; /* رنگ اصلی تیره */
+  --secondary: #95a5a6; /* خنثی روشن */
+  --accent: #6c5ce7; /* بنفش ملایم (رنگ تاکیدی) */
+  --neutral: #dfe6e9; /* پس‌زمینه خنثی */
+  --dark: #34495e; /* رنگ تیره */
+  --background: #f5f6fa; /* پس‌زمینه روشن */
+}
+
+/* Theme 2 */
+[data-theme='theme2'] {
+  --primary: #2c3e50; /* رنگ اصلی تیره */
+  --secondary: #bdc3c7; /* خنثی روشن */
+  --accent: #00cec9; /* سبز آبی ملایم (رنگ تاکیدی) */
+  --neutral: #ecf0f1; /* پس‌زمینه خنثی */
+  --dark: #34495e; /* رنگ تیره */
+  --background: #f9f9f9; /* پس‌زمینه روشن */
+}
+
+/* Theme 3 */
+[data-theme='theme3'] {
+  --primary: #636e72; /* رنگ اصلی تیره */
+  --secondary: #b2bec3; /* خنثی ملایم */
+  --accent: #fdcb6e; /* نارنجی ملایم (رنگ تاکیدی) */
+  --neutral: #f5f6fa; /* پس‌زمینه خنثی */
+  --dark: #2d3436; /* رنگ تیره */
+  --background: #f8f9fa; /* پس‌زمینه روشن */
+}
+
+/* Theme 4 */
+[data-theme='theme4'] {
+  --primary: #34495e; /* رنگ اصلی تیره */
+  --secondary: #95a5a6; /* خنثی روشن */
+  --accent: #e84393; /* صورتی ملایم (رنگ تاکیدی) */
+  --neutral: #dfe6e9; /* پس‌زمینه خنثی */
+  --dark: #2c3e50; /* رنگ تیره */
+  --background: #f1f2f6; /* پس‌زمینه روشن */
+}
+
+/* Theme 5 */
+[data-theme='theme5'] {
+  --primary: #2d3436;
+  --secondary: #dfe6e9;
+  --accent: #e17055;
+  --neutral: #f8f9fa;
+  --dark: #636e72;
+  --background: #e5e5e5; /* Soft Light Gray */
+}
+
+/* Theme 6 */
+[data-theme='theme6'] {
+  --primary: #2c3e50;
+  --secondary: #95a5a6;
+  --accent: #27ae60;
+  --neutral: #ecf0f1;
+  --dark: #34495e;
+  --background: #f1f2f6; /* Light Neutral Gray */
+}
+
+/* Theme 7 */
+[data-theme='theme7'] {
+  --primary: #1abc9c;
+  --secondary: #16a085;
+  --accent: #f39c12;
+  --neutral: #dfe6e9;
+  --dark: #2d3436;
+  --background: #f4f7f7; /* Very Light Gray */
+}
+
+/* Theme 8 */
+[data-theme='theme8'] {
+  --primary: #34495e; /* آبی-خاکستری تیره */
+  --secondary: #bdc3c7; /* خاکستری روشن */
+  --accent: #e74c3c; /* قرمز ملایم (تاکیدی) */
+  --neutral: #ecf0f1; /* خاکستری خنثی */
+  --dark: #2c3e50; /* تیره */
+  --background: #f9f9f9; /* روشن */
+}
+
+/* Theme 9 */
+[data-theme='theme9'] {
+  --primary: #2d3436; /* خاکستری تیره */
+  --secondary: #a4b0be; /* خاکستری آبی ملایم */
+  --accent: #1abc9c; /* سبزآبی ملایم (تاکیدی) */
+  --neutral: #dfe6e9; /* خنثی */
+  --dark: #34495e; /* تیره */
+  --background: #f5f6fa; /* روشن */
+}
+
+/* Theme 10 */
+[data-theme='theme10'] {
+  --primary: #2c3e50; /* آبی-خاکستری تیره */
+  --secondary: #7f8c8d; /* خاکستری متوسط */
+  --accent: #f39c12; /* نارنجی ملایم (تاکیدی) */
+  --neutral: #ecf0f1; /* خاکستری روشن */
+  --dark: #34495e; /* تیره */
+  --background: #f8f9fa; /* روشن */
+}
+
+/* Theme 11 */
+[data-theme='theme11'] {
+  --primary: #2d3436; /* خاکستری تیره */
+  --secondary: #b2bec3; /* خاکستری روشن */
+  --accent: #ff7675; /* صورتی ملایم (تاکیدی) */
+  --neutral: #dfe6e9; /* خنثی */
+  --dark: #636e72; /* تیره */
+  --background: #f5f5f5; /* روشن */
+}
+
+/* Theme 12 */
+[data-theme='theme12'] {
+  --primary: #2c3e50; /* خاکستری آبی تیره */
+  --secondary: #95a5a6; /* خاکستری روشن */
+  --accent: #55efc4; /* سبز نعنایی ملایم (تاکیدی) */
+  --neutral: #ecf0f1; /* خنثی */
+  --dark: #34495e; /* تیره */
+  --background: #f8f8f8; /* روشن */
+}
+
+/* Theme 13 */
+[data-theme='theme13'] {
+  --primary: #34495e; /* آبی تیره */
+  --secondary: #95a5a6; /* خاکستری روشن */
+  --accent: #fd79a8; /* صورتی روشن (تاکیدی) */
+  --neutral: #ecf0f1; /* خاکستری روشن */
+  --dark: #2c3e50; /* تیره */
+  --background: #f7f7f7; /* روشن */
+}
+
+/* Theme 14 */
+[data-theme='theme14'] {
+  --primary: #2d3436; /* خاکستری تیره */
+  --secondary: #a4b0be; /* خاکستری آبی روشن */
+  --accent: #f6b93b; /* طلایی ملایم (تاکیدی) */
+  --neutral: #dfe6e9; /* خنثی */
+  --dark: #34495e; /* تیره */
+  --background: #f4f4f4; /* روشن */
+}
+
+/* Theme 15 */
+[data-theme='theme15'] {
+  --primary: #34495e; /* آبی تیره */
+  --secondary: #bdc3c7; /* خاکستری روشن */
+  --accent: #eb4d4b; /* قرمز ملایم (تاکیدی) */
+  --neutral: #ecf0f1; /* خنثی */
+  --dark: #2c3e50; /* تیره */
+  --background: #f9f9f9; /* روشن */
+}
+
+/* Theme 16 */
+[data-theme='theme16'] {
+  --primary: #2d3436; /* خاکستری تیره */
+  --secondary: #7f8c8d; /* خاکستری متوسط */
+  --accent: #6ab04c; /* سبز ملایم (تاکیدی) */
+  --neutral: #dfe6e9; /* خنثی */
+  --dark: #34495e; /* تیره */
+  --background: #f5f6fa; /* روشن */
+}
+
+/* Theme 17 */
+[data-theme='theme17'] {
+  --primary: #2c3e50; /* آبی تیره */
+  --secondary: #a4b0be; /* خاکستری آبی روشن */
+  --accent: #e67e22; /* نارنجی تیره (تاکیدی) */
+  --neutral: #ecf0f1; /* خاکستری روشن */
+  --dark: #34495e; /* تیره */
+  --background: #f8f8f8; /* روشن */
+}
+
+/* Theme 18 */
+[data-theme='theme18'] {
+  --primary: #34495e; /* آبی تیره */
+  --secondary: #bdc3c7; /* خاکستری روشن */
+  --accent: #9b59b6; /* بنفش ملایم (تاکیدی) */
+  --neutral: #ecf0f1; /* خنثی */
+  --dark: #2c3e50; /* تیره */
+  --background: #f9f9f9; /* روشن */
+}
+
+/* Theme 19 */
+[data-theme='theme19'] {
+  --primary: #2d3436; /* خاکستری تیره */
+  --secondary: #95a5a6; /* خاکستری روشن */
+  --accent: #16a085; /* سبز زمردی ملایم (تاکیدی) */
+  --neutral: #dfe6e9; /* خنثی */
+  --dark: #34495e; /* تیره */
+  --background: #f4f4f4; /* روشن */
+}
+
+/* Theme 20 */
+[data-theme='theme20'] {
+  --primary: #2c3e50; /* آبی-خاکستری تیره */
+  --secondary: #7f8c8d; /* خاکستری متوسط */
+  --accent: #2980b9; /* آبی ملایم (تاکیدی) */
+  --neutral: #ecf0f1; /* خاکستری روشن */
+  --dark: #34495e; /* تیره */
+  --background: #f8f9fa; /* روشن */
+}
+
+body {
+  font-family: 'IRANSans', sans-serif;
+  @apply overflow-auto bg-background text-dark;
+}
+
+/* استایل‌های عمومی برای اسکرول بار */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent) var(--background);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--neutral);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--neutral);
+  border-radius: 10px;
+  border: 2px solid #f3f4f6;
+}
+
+/* بنر */
+.banner-title {
+  @apply font-bold md:text-9xl text-3xl text-center text-primary;
+}
+
+/* سایدبار */
+.sidebar {
+  @apply fixed top-0 left-0 w-1/5 h-full overflow-y-auto p-6 rounded-lg shadow-md z-50 bg-neutral text-dark;
+}
+
+/* دکمه‌ها */
+.btn-primary {
+  @apply bg-accent text-neutral py-4 px-8 rounded-lg text-base font-medium transition duration-300 ease-in-out hover:bg-dark;
+}
+
+.btn-secondary {
+  @apply bg-neutral text-dark border border-dark py-2 px-4 rounded-lg text-base font-medium transition duration-300 ease-in-out hover:bg-dark hover:text-neutral;
+}
+
+.btn-transparent {
+  @apply bg-transparent text-primary border-2 border-primary py-2 px-4 rounded-lg text-base font-medium transition duration-300 ease-in-out hover:bg-primary hover:text-neutral;
+}
+
+/* اینپوت‌ها */
+.input {
+  @apply w-full py-2 px-3 text-dark bg-neutral border border-gray-300 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-dark;
+}
+
+.input-small {
+  @apply py-1 px-2 text-sm;
+}
+
+.input-large {
+  @apply py-3 px-5 text-lg;
+}
+
+/* عنوان‌ها */
+.title {
+  @apply text-2xl text-primary font-bold;
+}
+
+.subtitle {
+  @apply text-xl text-dark font-semibold mb-3;
+}
+
+/* متن‌ها */
+.text {
+  @apply text-base text-dark leading-relaxed;
+}
+
+.text-small {
+  @apply text-sm text-dark;
+}
+
+.text-highlight {
+  @apply text-accent font-bold;
+}
+
+/* پس‌زمینه‌ها */
+.bg-main {
+  @apply bg-secondary text-dark;
+}
+
+/* بخش‌ها */
+.section {
+  @apply bg-neutral p-5 rounded-lg my-5;
+}
+
+/* کارت‌ها */
+.card {
+  @apply bg-neutral border border-dark p-4 rounded-md shadow-md;
+}
+
+/* استایل چک‌باکس سفارشی */
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.checkbox-custom:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.checkbox-custom:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* سفارشی کردن دکمه‌های پجینیشن */
+.swiper-pagination-bullet {
+  width: 10px !important; /* عرض دکمه */
+  height: 10px !important; /* ارتفاع دکمه */
+  background-color: #d1d5db !important; /* رنگ پیش‌فرض */
+  border-radius: 50% !important; /* دایره‌ای کردن دکمه */
+  opacity: 1 !important; /* اطمینان از قابل مشاهده بودن */
+  transition: background-color 0.3s ease !important; /* افکت تغییر رنگ */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary) !important; /* رنگ برای دکمه فعال */
+  transform: scale(1.2) !important; /* بزرگ‌تر کردن دکمه فعال */
+}
+
+/* موقعیت پجینیشن */
+.swiper-pagination {
+  width: max-content !important;
+  bottom: 10px !important; /* فاصله از پایین */
+  left: 2px !important;
+  display: flex !important;
+  justify-content: center !important; /* مرکز قرار دادن */
+  gap: 2px !important; /* فاصله بین دکمه‌ها */
+}
+
+/* bottom navbar animation */
+@keyframes smooth-bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  15% {
+    transform: translateY(-10px) scale(1.1); /* حرکت اولیه با بزرگ شدن */
+  }
+  30% {
+    transform: translateY(10px) scale(1); /* بازگشت اولیه به حالت اصلی */
+  }
+  45% {
+    transform: translateY(-5px) scale(1.05); /* جهش دوم کمی کوچک‌تر و مقیاس */
+  }
+  60% {
+    transform: translateY(5px) scale(1); /* حرکت طبیعی رو به پایین */
+  }
+  75% {
+    transform: translateY(-2px) scale(1.02); /* حرکت کوچک و مقیاس جزئی */
+  }
+  85% {
+    transform: translateY(2px) scale(1); /* حرکت نهایی بسیار کوچک */
+  }
+  100% {
+    transform: translateY(0) scale(1); /* ثابت شدن در وضعیت نهایی */
+  }
+}
+
+.animate-smooth-bounce {
+  animation: smooth-bounce 2s cubic-bezier(0.25, 1, 0.5, 1);
+}
