@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '../public/fonts/IRANSans.css';
+@import '../../public/fonts/IRANSans.css';
 
 :root {
   --primary: #2d3436;

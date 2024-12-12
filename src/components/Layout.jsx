@@ -6,7 +6,7 @@ import Header from '@/components/Header'
 import MobileHeader from '@/components/MobileHeader'
 import ThemeDrawer from '@/components/ThemeDrawer '
 import { useEffect, useState } from 'react'
-import { ThemeProvider } from '../../context/ThemeContext'
+import { ThemeProvider } from '../context/ThemeContext'
 
 export default function Layout({ children }) {
   const [currentTheme, setCurrentTheme] = useState('light') // وضعیت تم فعلی (روشن یا تاریک)
