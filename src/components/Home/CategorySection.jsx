@@ -10,13 +10,11 @@ export default function CategorySection({ products }) {
   return (
     <div className="space-y-16">
       <h1 className="title text-center">خرید بر اساس دسته بندی</h1>
-      <div className="flex gap-4 items-center justify-around">
+      <div className="flex flex-col lg:flex-row gap-4 items-center justify-around">
         {filteredProducts.map((product, index) => (
           <div
             key={product.id} // استفاده از product.id به جای index برای key
-            className={`flex flex-col items-center ${
-              index === 1 ? '-mb-40 lg:mb-0' : ''
-            }`}
+            className={`flex flex-col items-center`}
           >
             <figure className="w-32 md:w-full rounded-full overflow-hidden shadow-lg">
               {product.images && product.images[2] && (

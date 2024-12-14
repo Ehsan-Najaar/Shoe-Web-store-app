@@ -18,7 +18,7 @@ export function ProductCard1({ product }) {
   return (
     <Link
       href={`/store/${product.category}/product/${product.id}`} // لینک به صفحه محصول
-      className="relative group w-64 h-max shadow-lg bg-neutral rounded-xl overflow-hidden cursor-pointer scale-75 lg:scale-100"
+      className="relative group w-64 h-max shadow-lg bg-neutral rounded-xl overflow-hidden cursor-pointer scale-[70%] lg:scale-100"
     >
       {/* تصویر اصلی محصول */}
       <div className="relative w-full h-48 overflow-hidden">
@@ -192,7 +192,7 @@ export function ProductCard2({ product, onRemove }) {
     <>
       <Link
         href={`/store/${product.category}/product/${product.id}`}
-        className="block relative w-64 h-max shadow-lg bg-neutral rounded-xl overflow-hidden cursor-pointer scale-75 lg:scale-100"
+        className="block relative w-64 h-max shadow-lg bg-neutral rounded-xl overflow-hidden cursor-pointer scale-[70%] lg:scale-100"
       >
         {/* تصویر محصول */}
         <figure className="relative w-full h-48">

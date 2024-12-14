@@ -42,7 +42,7 @@ export const ProductSlider = ({ slides }) => {
             onClick={goToPrevSlide}
             disabled={isBeginning}
           >
-            <FiChevronLeft size={20} />
+            <FiChevronRight size={20} />
           </button>
           {/* دکمه حرکت به سمت بعدی */}
           <button
@@ -52,7 +52,7 @@ export const ProductSlider = ({ slides }) => {
             onClick={goToNextSlide}
             disabled={isEnd}
           >
-            <FiChevronRight size={20} />
+            <FiChevronLeft size={20} />
           </button>
         </div>
       </div>
@@ -73,11 +73,11 @@ export const ProductSlider = ({ slides }) => {
         }}
         breakpoints={{
           0: {
-            slidesPerView: 1.8,
+            slidesPerView: 1.5,
             spaceBetween: 10,
           },
           480: {
-            slidesPerView: 2.5,
+            slidesPerView: 2.4,
             spaceBetween: 16,
           },
           768: {
@@ -96,7 +96,7 @@ export const ProductSlider = ({ slides }) => {
       >
         {/* ایجاد اسلایدها */}
         {slides.slice(0, 10).map((slide, index) => (
-          <SwiperSlide key={index} className="px-2 md:px-4">
+          <SwiperSlide key={index} className="">
             <ProductCard2 product={slide} />
           </SwiperSlide>
         ))}

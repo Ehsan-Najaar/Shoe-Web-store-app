@@ -100,30 +100,25 @@ export default function RelatedProducts({ products, pathname, thisProduct }) {
           disableOnInteraction: false, // غیرفعال نشدن اتوماتیک در تعامل با اسلایدر
         }}
         breakpoints={{
-          // موبایل کوچک
           0: {
-            slidesPerView: 1.8,
-            spaceBetween: 10, // فاصله بین اسلایدها
+            slidesPerView: 1.5,
+            spaceBetween: 10,
           },
-          // موبایل بزرگ
           480: {
-            slidesPerView: 2.5,
+            slidesPerView: 2.4,
             spaceBetween: 16,
           },
-          // تبلت
           768: {
             slidesPerView: 3,
             spaceBetween: 16,
           },
-          // دسکتاپ
           1024: {
             slidesPerView: 3.5,
-            spaceBetween: 24, // فاصله بیشتر برای دسکتاپ
+            spaceBetween: 24,
           },
-          // دسکتاپ بزرگ
           1440: {
             slidesPerView: 4,
-            spaceBetween: 32, // فاصله حتی بیشتر برای نمایش کامل
+            spaceBetween: 32,
           },
         }}
       >
