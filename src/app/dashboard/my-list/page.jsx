@@ -35,11 +35,11 @@ export default function MyList() {
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row gap-6 px-4 md:px-12 lg:px-16 xl:px-24 py-4 md:py-6 lg:py-10 xl:py-12">
-      {/* Mobile Header */}
-      <div className="lg:hidden flex items-center justify-between">
-        <h2 className="text-xl font-bold">محصولات مورد علاقه</h2>
+      {/* هدر موبایل */}
+      <div className="lg:hidden flex items-center justify-between bg-neutral rounded-lg shadow-lg shadow-gray-700  p-2">
+        <h2 className="text-xl font-bold">لیست من</h2>
         <Link href="/dashboard">
-          <FiChevronLeft className="w-12 h-12 bg-MyGray rounded-full p-2 cursor-pointer" />
+          <FiChevronLeft size={40} className="cursor-pointer" />
         </Link>
       </div>
 
@@ -55,7 +55,7 @@ export default function MyList() {
             در حال بارگذاری...
           </p>
         ) : likedProducts.length > 0 ? (
-          <ul className="grid place-items-center grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-12">
+          <ul className="grid place-items-center grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-12">
             {likedProducts.map((product) => (
               <ProductCard2
                 key={product.id}

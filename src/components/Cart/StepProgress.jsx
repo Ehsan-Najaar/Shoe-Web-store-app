@@ -81,7 +81,7 @@ const StepProgress = () => {
           {/* خط بین استپ‌ها */}
           {index < steps.length - 1 && (
             <div
-              className={`absolute right-4 left-4 top-[30%] w-[320%] sm:w-[766%] md:w-[690%] lg:w-[650%] xl:w-[700%] h-1 -z-10 ${
+              className={`absolute right-[50%] top-[30%] w-[320%] sm:w-[766%] md:w-[690%] lg:w-[650%] xl:w-[700%] h-1 -z-10 ${
                 index === 0 || steps[index].completed // اگر مرحله اول یا بعدی تکمیل شده بود
                   ? 'bg-primary'
                   : 'bg-neutral text-primary'
