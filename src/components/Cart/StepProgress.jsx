@@ -51,28 +51,32 @@ const StepProgress = () => {
   ]
 
   return (
-    <div className="flex items-center justify-between w-full max-w-4xl mx-auto overflow-hidden">
+    <div className="flex items-center justify-between w-full max-w-5xl mx-auto overflow-hidden">
       {steps.map((step, index) => (
-        <div key={index} className="flex items-center relative">
+        <div
+          key={index}
+          className={`flex items-center relative ${
+            index === steps.length - 1 ? 'w-max' : 'w-full'
+          }`}
+        >
           <div className="flex flex-col items-center justify-center">
             <div>
               {/* دایره‌ی استپ */}
               <div
                 className={`flex items-center justify-center w-10 h-10 rounded-full ${
                   step.completed
-                    ? 'bg-primary text-neutral' // رنگ دایره استپ تکمیل شده
-                    : 'bg-neutral text-primary' // رنگ دایره استپ تکمیل نشده
+                    ? 'bg-primary text-neutral'
+                    : 'bg-neutral text-primary'
                 }`}
               >
                 {step.icon}
               </div>
             </div>
-
             {/* متن زیر استپ */}
             <span
-              className={`mt-2 text-sm ${
+              className={`mt-2 text-sm text-nowrap ${
                 step.completed ? 'text-dark' : 'text-dark'
-              }`} // تغییر رنگ متن بر اساس وضعیت تکمیل
+              }`}
             >
               {step.name}
             </span>
@@ -80,13 +84,13 @@ const StepProgress = () => {
 
           {/* خط بین استپ‌ها */}
           {index < steps.length - 1 && (
-            <div
-              className={`absolute right-[50%] top-[30%] w-[320%] sm:w-[766%] md:w-[690%] lg:w-[650%] xl:w-[700%] h-1 -z-10 ${
-                index === 0 || steps[index].completed // اگر مرحله اول یا بعدی تکمیل شده بود
-                  ? 'bg-primary'
-                  : 'bg-neutral text-primary'
-              }`}
-            ></div>
+            <div className="flex-grow h-1 mx-2 bg-primary">
+              <div
+                className={`h-full ${
+                  steps[index].completed ? 'bg-primary' : 'bg-neutral'
+                }`}
+              ></div>
+            </div>
           )}
         </div>
       ))}
